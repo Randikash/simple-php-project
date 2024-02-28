@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>register</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="import" href="header.html">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        
+        <div class="form">
+        <form method="post">
+            <h2>Register</h2>
+            <div class="UPL">
+                <label >Name </label>
+                <input type="text" id="name" required > 
+            </div>
+            <div class="UPL">
+                <label >UserName </label>
+                <input type="text" id="username" required > 
+            </div>
+            <div class="UPL">
+                <label >Email </label>
+                <input type="email" id="email" required > 
+            </div>
+            <div class="UPL">
+                <label >Password </label>
+                <input type="password" id="password" required >
+            </div>
+            <div class="UPL">
+                <label >Confirm Password </label>
+                <input type="password" id="password" required >
+            </div>
+            <div class="btn">
+                <input type="submit"  value="Register">
+            </div>
+            
+        </form>
+        </div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+
+    </body>
+
+</html>
