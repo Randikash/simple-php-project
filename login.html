@@ -2,27 +2,37 @@
 <html lang="en">
     <head>
         <title>login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="import" href="header.html">
     </head>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+    </script>
 
     <body>
-        <div>
-        <from>
+        <div id ="header"></div>
+        <div class="form">
+        <form method="post">
             <h2>Login</h2>
-            <div>
-                <label>UserName</label>
-                <input type="text" id="username"> 
+            <div class="UPL">
+                <label >UserName </label>
+                <input type="text" id="username" required > 
             </div>
-            <div>
-                <label>Password</label>
-                <input type="password" id="password">
+            <div class="UPL">
+                <label >Password </label>
+                <input type="password" id="password" required >
             </div>
-            <div>
-                <input type="submit" class="submit" value="Login">
+            <div class="btn">
+                <input type="submit"  value="Login">
             </div>
             <div>
                 <p>If You Don't have Account <a href="register.html">Sing Up</a></p>
             </div>
-        </from>
+        </form>
         </div>
 
     </body>
