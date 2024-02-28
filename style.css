@@ -1,18 +1,23 @@
 
 .header{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
 }
 .header h1{
-    color: rgb(112, 86, 86);
+    color: rgb(255, 255, 255);
     margin: 2%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 nav ul{
-    background-color: aliceblue;
+    
     height: 20px;
-    padding: 7px;
+    padding: 10px;
     border-radius: 10px;
     
     
@@ -20,25 +25,27 @@ nav ul{
 
 
 nav li{
-    background-color: rgb(213, 213, 255);
+    
     width: 90%;
-    margin-left: 3%;
+    margin-left: 20px;
     padding: 3px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: inline;
     border-radius: 5px;
+    font-size: 20px;
 
 
 }
 
 li a{
+    color: aliceblue;
     text-decoration: none;
 }
 
 li:hover{
-    background-color: rgb(161, 161, 240);
+    background-color: rgb(87, 87, 119);
 }
 
 
@@ -46,7 +53,7 @@ li:hover{
 
 
 body{
-    background: rgb(180, 230, 184);
+    background: rgb(192, 212, 194);
     
 }
 
@@ -106,4 +113,17 @@ h2{
 
 .btn input:hover{
     background-color: rgb(3, 0, 179);
+}
+
+.footer{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+    margin-top: 20px;
+    
 }
