@@ -1,0 +1,109 @@
+
+.header{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.header h1{
+    color: rgb(112, 86, 86);
+    margin: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav ul{
+    background-color: aliceblue;
+    height: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    
+    
+}
+
+
+nav li{
+    background-color: rgb(213, 213, 255);
+    width: 90%;
+    margin-left: 3%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    border-radius: 5px;
+
+
+}
+
+li a{
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: rgb(161, 161, 240);
+}
+
+
+
+
+
+body{
+    background: rgb(180, 230, 184);
+    
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+form{
+    background-color: rgb(200, 224, 245);
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: inset;
+    margin-top: 20px;
+    width: 25%;
+    
+}
+
+
+h2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.UPL{
+    
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.UPL input{
+    border-radius: 4px;
+    border: 3px ;
+    height: 30px;
+    width:100%;
+    padding: 0%;
+    
+}
+.but{
+    margin-top: 10px;
+}
+.btn input{
+    border-radius: 5px;
+    border: 1px;
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: rgb(45, 45, 241);
+
+}
+
+.btn input:hover{
+    background-color: rgb(3, 0, 179);
+}
