@@ -2,11 +2,11 @@
 <?php
 $con = mysqli_connect("localhost", "root", "", "employee");
 
-// Check connection
+// Check connection 
 if (mysqli_connect_errno()) {
     die("Connection failed: " . mysqli_connect_error());
 } else {
-    echo "Connected successfully";
+   // echo "Connected successfully";
 }
 ?>
 
@@ -24,10 +24,10 @@ $mysqli = new mysqli($host, $username, $password, $dbname);
 if ($mysqli->connect_errno) {
     // Connection failed, display an error message
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
-} else {
+} //else {
     // Connection successful, display a success message
-    echo "Connected to MySQL database successfully";
-}
+    //echo "Connected to MySQL database successfully";
+//}
 
 // Close the database connection
 $mysqli->close();
