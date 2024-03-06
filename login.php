@@ -10,7 +10,7 @@
     <link rel="import" href="header.html">
 </head>
 <script>
-    fetch('header.html')
+    fetch('header_footer/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
