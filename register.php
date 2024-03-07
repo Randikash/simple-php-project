@@ -32,9 +32,10 @@
 
             // Verify the uniqueness of the email
             $verify_query = mysqli_query($con, "SELECT Email FROM users WHERE Email='$email'");
-            if(mysqli_num_rows($verify_query) != 0){
+            $verify_username = mysqli_query($con, "SELECT Username FROM users WHERE Username='$username");
+            if((mysqli_num_rows($verify_query) != 0) && mysqli_num_rows($verify_username) !=0) {
                 echo "<div class='message'>
-                        <p>This email is used, please try another one.</p>
+                        <p>This email or username used, please try another one.</p>
                       </div> <br>";
                 echo "<a href='javascript:self.history.back()'><button class='but'> Go Back </button>";
                 exit;
